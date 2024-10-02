@@ -7,7 +7,7 @@ const url="mongodb+srv://Gowtham:6374013119@cluster0.ki41eq9.mongodb.net/Bikeser
 mongoose.connect(url).then(()=>{
     const app=express()
     app.use(cors({
-        origin:["http://localhost:3000"],
+        origin:["http://localhost:3000","https://alextuneup.vercel.app/"],
         methods:["GET","POST","PUT","DELETE"],
         credentials:true
     }))
